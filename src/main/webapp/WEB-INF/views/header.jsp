@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
-<div class="container" style="margin-bottom: 50px;">
+<div class="container" style="margin-bottom: 50px; width: 100%;">
 	<header
 		class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
 		<a href="/"
@@ -21,7 +21,7 @@
 		</ul>
 
 		<div class="col-md-3 text-end">
-			<a class="btn btn-outline-primary" href="/member/loginUI">로그인</a>
+			<a class="btn btn-outline-primary" href="/member/loginUI">로그인</a> 
 			<a class="btn btn-outline-primary" href="#">회원가입</a>
 		</div>
 	</header>

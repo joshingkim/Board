@@ -7,4 +7,6 @@ public interface BoardService {
 
 	PageTO<BoardVO> list(PageTO<BoardVO> pt);
 
+	void insert(BoardVO vo);
+	
 }

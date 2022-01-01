@@ -42,6 +42,19 @@ public class BoardController {
 		model.addAttribute("pt", pt);
 	}
 	
+	@RequestMapping(value = "/insert", method = RequestMethod.POST)
+	public String insert(BoardVO vo) {
+		
+		bService.insert(vo);
+			
+		return "redirect:/board/list";
+//		return "redirect:/board/read/"+vo.getBno();
+	}
 	
+	@RequestMapping(value = "/insertui", method = RequestMethod.GET)
+	public String insertui() {
+		
+		return "board/insert";
+	}
 
 }

@@ -31,5 +31,10 @@ public class BoardDAOImpl implements BoardDAO {
 		return sqlSession.selectOne(NS+".getAmount");
 	}
 	
+	@Override
+	public void insert(BoardVO vo) {
+		sqlSession.insert(NS+".insert", vo);
+		
+	}
 	
 }

@@ -10,5 +10,7 @@ public interface BoardDAO {
 	List<BoardVO> list(PageTO<BoardVO> to);
 	
 	int getAmount();
+	
+	void insert(BoardVO vo);
 
 }
