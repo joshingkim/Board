@@ -15,7 +15,7 @@
 
 		<ul class="nav justify-content-center">
 			<li><a href="/" class="nav-link px-2 text-muted">홈</a></li>
-			<li><a href="#" class="nav-link px-2 text-muted">게시판</a></li>
+			<li><a href="/board/list" class="nav-link px-2 text-muted">게시판</a></li>
 			<li><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
 			<li><a href="#" class="nav-link px-2 text-muted">About</a></li>
 		</ul>
