@@ -6,12 +6,18 @@
 <mapper namespace="kr.co.board">
 
 	<select id="getAmount" resultType="Integer">
-		SELECT COUNT(bno) FROM board_tbl
+		SELECT COUNT(bno) FROM
+		board_tbl
 	</select>
 
 	<select id="list" resultType="kr.co.domain.BoardVO">
-		SELECT * FROM board_tbl ORDER BY bno DESC
+		SELECT * FROM board_tbl ORDER BY
+		bno DESC
 	</select>
-	
+
+	<insert id="insert">
+		INSERT INTO board_tbl (bno,title,content,id) values (seq_board_tbl_bno.NEXTVAL, #{title}, #{content}, #{id})
+	</insert>
+
 
 </mapper>

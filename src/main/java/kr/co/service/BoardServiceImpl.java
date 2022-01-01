@@ -32,4 +32,22 @@ public class BoardServiceImpl implements BoardService {
 		return pt;
 	}
 
+	/* @Transactional */
+	@Override
+	public void insert(BoardVO vo) {
+		bDao.insert(vo);
+
+//		String[] arr = vo.getInsertfiles();
+//		int bno = vo.getBno();
+//		
+//		Map<String, Object> map = new HashMap<String, Object>();
+//		map.put("bno", bno);
+//		if (arr != null) {
+//			for (int i = 0; i < arr.length; i++) {
+//				map.put("filename", arr[i]);
+//				aDao.insert(map);
+//			}
+//		}
+	}
+	
 }
